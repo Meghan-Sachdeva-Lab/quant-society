@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francis Lewis High School Quant Society</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #1e293b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0f172a;
+            border-bottom: 2px solid #cbd5e1;
+            padding-bottom: 8px;
+        }
+        ul {
+            line-height: 1.6;
+        }
+        .resource-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .resource-list li {
+            margin-bottom: 12px;
+            padding: 10px;
+            background-color: #f8fafc;
+            border-radius: 4px;
+            border-left: 4px solid #10b981;
+        }
+        .resource-list a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .resource-list a:hover {
+            text-decoration: underline;
+        }
+        .graph-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        /* A simple CSS-drawn graph to look like high school project styling */
+        .bar-chart {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            background-color: #e2e8f0;
+            height: 200px;
+            padding: 10px;
+            border-left: 3px solid #334155;
+            border-bottom: 3px solid #334155;
+            border-radius: 4px;
+        }
+        .bar {
+            width: 60px;
+            background-color: #3b82f6;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+            padding-top: 5px;
+            border-radius: 4px 4px 0 0;
+        }
+        .bar-label {
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .chart-wrapper {
+            display: inline-block;
+            width: 100%;
+        }
+        .labels-wrapper {
+            display: flex;
+            justify-content: space-around;
+        }
+        button {
+            background-color: #10b981;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #059669;
+        }
+        .badge {
+            background-color: #3b82f6;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Francis Lewis High School Quant Society</h1>
+        <p>Analyzing Stock Prices & Mathematical Models</p>
+    </header>
+
+    <div class="container" style="border-left: 5px solid #3b82f6;">
+        <h2>Club Leadership</h2>
+        <p><strong>Club President:</strong> Meghan Sachdeva <span class="badge">Founder</span></p>
+    </div>
+
+    <div class="container">
+        <h2>Our Mission & Plan</h2>
+        <p>Welcome to the Quant Society! Our goal is to connect mathematics, computer programming, and finance. Here is what we plan to do this semester:</p>
+        <ul>
+            <li><strong>Step 1:</strong> Learn basic Python coding to fetch real-time stock market closing data.</li>
+            <li><strong>Step 2:</strong> Study stock price history and calculate moving averages (finding trends!).</li>
+            <li><strong>Step 3:</strong> Build simple algorithmic strategies (like buying when the price crosses the 10-day average).</li>
+            <li><strong>Step 4:</strong> Backtest our strategy using fake paper trading accounts to see if we make a profit.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Sample Project: Stock Price Over 4 Days</h2>
+        <p>This is a mock graph showing a sample stock price trajectory we tracked during our first meeting.</p>
+        
+        <div class="graph-container">
+            <div class="chart-wrapper">
+                <div class="bar-chart">
+                    <div class="bar" style="height: 50px;">$50</div>
+                    <div class="bar" style="height: 120px;">$120</div>
+                    <div class="bar" style="height: 90px;">$90</div>
+                    <div class="bar" style="height: 180px;">$180</div>
+                </div>
+                <div class="labels-wrapper">
+                    <div class="bar-label">Day 1</div>
+                    <div class="bar-label">Day 2</div>
+                    <div class="bar-label">Day 3</div>
+                    <div class="bar-label">Day 4</div>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="alert('Simulating pipeline calculation... Strategy Return: +14.2%!')">Run Strategy Simulation</button>
+    </div>
+
+    <div class="container">
+        <h2>Python Quant Resources & Learning Path</h2>
+        <p>Use these YouTube tutorials to study up before our coding labs:</p>
+        <ul class="resource-list">
+            <li>
+                <a href="https://www.youtube.com/watch?v=S9Nt1ILWUaQ" target="_blank">Python for Finance Beginner's Guide</a>
+                <br><small>Perfect for Meeting 1. Learn how to fetch raw data using <code>yfinance</code> and Google Colab in under 10 minutes.</small>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=n-x75xOBEag" target="_blank">Financial Analysis with yfinance and Pandas</a>
+                <br><small>Perfect for Meeting 2. Learn how to clean data, build dataframes, and calculate dynamic moving averages.</small>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=j6K-pyF1hdI" target="_blank">QuantConnect Python Algorithmic Trading Tutorial</a>
+                <br><small>Advanced Study. See how professional engineers backtest complex data metrics and indicators across market histories.</small>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container" style="text-align: center; font-size: 12px; color: #64748b;">
+        <p>Meetings every Thursday in Room 204 | No previous coding experience required!</p>
+    </div>
+
+</body>
+</html>
